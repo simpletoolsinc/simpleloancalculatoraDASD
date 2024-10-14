@@ -8,6 +8,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            position: relative;
         }
         h1 {
             text-align: center;
@@ -60,6 +61,25 @@
                 flex: 1 1 100%;
             }
         }
+        /* Стили для всплывающих сообщений */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeInOut 6s forwards;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
@@ -70,92 +90,150 @@
     </div>
 
     <div class="container">
+        <!-- Карточки 1-10 с полным описанием -->
         <!-- Карточка 1 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
+        <!-- Повторяем карточку 10 раз с полным описанием -->
         <!-- Карточка 2 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 3 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 4 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 5 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 6 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 7 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 8 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 9 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
         <!-- Карточка 10 -->
         <div class="item">
-            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Подарок">
             <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
             <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
             <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
         </div>
     </div>
 
+    <!-- Контейнер для всплывающих сообщений -->
+    <div id="popup-container"></div>
+
     <script>
-        // Инициализация счетчика
+        // Инициализация счётчика
         var minStart = 20;
         var maxStart = 60;
         var count = Math.floor(Math.random() * (maxStart - minStart + 1)) + minStart;
         var counterElement = document.getElementById('counter');
         counterElement.textContent = count;
 
-        // Функция увеличения счетчика
+        // Функция увеличения счётчика
         setInterval(function() {
             var increment = Math.floor(Math.random() * 2) + 1; // Увеличение на 1 или 2
             count += increment;
             counterElement.textContent = count;
         }, 1000); // Обновление каждую секунду
+
+        // Списки имён и городов
+        var maleNames = ["Александр", "Дмитрий", "Максим", "Сергей", "Андрей", "Алексей", "Иван", "Денис", "Николай", "Михаил"];
+        var femaleNames = ["Анна", "Мария", "Елена", "Ольга", "Наталья", "Татьяна", "Юлия", "Ирина", "Екатерина", "Алина"];
+        var cities = ["Москва", "Санкт-Петербург", "Новосибирск", "Екатеринбург", "Казань", "Нижний Новгород", "Челябинск", "Самара", "Ростов-на-Дону", "Уфа"];
+
+        // Функция для склонения городов в родительном падеже
+        function toGenitive(city) {
+            var exceptions = {
+                "Москва": "Москвы",
+                "Санкт-Петербург": "Санкт-Петербурга",
+                "Новосибирск": "Новосибирска",
+                "Екатеринбург": "Екатеринбурга",
+                "Казань": "Казани",
+                "Нижний Новгород": "Нижнего Новгорода",
+                "Челябинск": "Челябинска",
+                "Самара": "Самары",
+                "Ростов-на-Дону": "Ростова-на-Дону",
+                "Уфа": "Уфы"
+            };
+            return exceptions[city] || city + "а";
+        }
+
+        // Функция для показа всплывающих сообщений
+        function showPopup() {
+            var isMale = Math.random() < 0.5; // 50% шанс
+            var name = isMale ? maleNames[Math.floor(Math.random() * maleNames.length)] : femaleNames[Math.floor(Math.random() * femaleNames.length)];
+            var city = cities[Math.floor(Math.random() * cities.length)];
+            var cityGenitive = toGenitive(city);
+            var message = isMale ? name + " из " + cityGenitive + " только что забрал подарок!" : name + " из " + cityGenitive + " только что забрала свой подарок!";
+
+            var popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.textContent = message;
+
+            document.body.appendChild(popup);
+
+            // Удаляем сообщение через 3 секунды
+            setTimeout(function() {
+                popup.remove();
+            }, 3000);
+        }
+
+        // Интервал для показа сообщений
+        function startPopupInterval() {
+            showPopup();
+            setTimeout(function() {
+                startPopupInterval();
+            }, Math.floor(Math.random() * 1000) + 3000); // 3-4 секунды
+        }
+
+        startPopupInterval();
+
     </script>
 
 </body>
