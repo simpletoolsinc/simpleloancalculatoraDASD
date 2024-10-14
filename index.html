@@ -1,70 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html lang="ru">
 <head>
-    <title>Loan Calculator</title>
-  
+    <meta charset="UTF-8">
+    <title>Ваша уникальная подборка подарков</title>
     <style>
         body {
-            background-color: white;
-            font-family: 'Trebuchet MS';
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
         }
-          
         h1 {
-            font-size: 35px;
+            text-align: center;
         }
-          
-        h1 {
-            font-size: 21px;
-            margin-top: 20px;
+        .counter {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
         }
-          
-        .calculator {
-            width: 400px;
-            height: 450px;
-            background-color: black;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            padding: 20px 0px 0px 100px;
-            border-radius: 50px;
-            color: white;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
         }
-          
-        input {
-            padding: 7px;
-            width: 70%;
-            margin-top: 7px;
+        .item {
+            flex: 1 1 50%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .item h2 {
+            font-size: 18px;
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+        .item p {
+            font-size: 14px;
+            color: #555;
+        }
+        .item button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .item button:hover {
+            background-color: #e65c00;
+        }
+        @media (max-width: 600px) {
+            .item {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
-  
 <body>
-    <div class="calculator">
-        <h1>Simple Loan Calculator</h1>
-  
-        <!-- Calling Calculate function defined in app.js -->
-        <p>Amount ($)     :
-      </br>
-            <input id="amount" type="number" 
-            onchange="Calculate()">
-        </p>
-  
-        <p>Interest Rate  :
-            <input id="rate" type="number" 
-            onchange="Calculate()">
-        </p>
-  
-        <p>Months to Pay :
-            <input id="months" type="number" 
-            onchange="Calculate()">
-        </p>
-  
-        <h2 id="total"></h2>
+
+    <h1>Ваша уникальная подборка подарков</h1>
+    <div class="counter">
+        Сегодня подарки получили уже <span id="counter"></span> человек.
     </div>
-  
-    <script src="app.js"></script>
+
+    <div class="container">
+        <!-- Карточка 1 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 5 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 6 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 7 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 8 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 9 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+        <!-- Карточка 10 -->
+        <div class="item">
+            <img src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1687870066/iatwslvrj7w6pfc1ksbk.png" alt="Скидка">
+            <h2>Скидка 500 рублей на первый заказ от 3000 рублей</h2>
+            <p>Скидка действует при первом заказе на сумму от 3000 рублей. Предложение доступно только для новых пользователей и распространяется на весь ассортимент Интернет-магазина.</p>
+            <a href="https://boobl-goom.ru/"><button>Забрать</button></a>
+        </div>
+    </div>
+
+    <script>
+        // Инициализация счетчика
+        var minStart = 20;
+        var maxStart = 60;
+        var count = Math.floor(Math.random() * (maxStart - minStart + 1)) + minStart;
+        var counterElement = document.getElementById('counter');
+        counterElement.textContent = count;
+
+        // Функция увеличения счетчика
+        setInterval(function() {
+            var increment = Math.floor(Math.random() * 2) + 1; // Увеличение на 1 или 2
+            count += increment;
+            counterElement.textContent = count;
+        }, 1000); // Обновление каждую секунду
+    </script>
+
 </body>
-  
 </html>
